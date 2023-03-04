@@ -6,10 +6,10 @@
     <title>BlogDeCafé</title>
     <meta name="description" content="Página web de blog de café">
 
-    <!-- Prefetch -->
+    <!-- Prefetch: para cargar la siguiente pagina segun el usuario-->
     <link rel="prefetch" href="nosotros.html" as="document">
 
-    <!-- Preload -->
+    <!-- Preload: para cargar elementos lo ante posible -->
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -18,6 +18,9 @@
     
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="img/blog1.jpg" as="image">
+
 </head>
 <body>
 
@@ -49,9 +52,9 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <picture>
-                        <source loading="lazy"  srcset="img/blog1.webp" type="image/webp">
-                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog"> 
+                    <picture>   <!-- soporta diferentes formatos y segun el navegador va a cargar la imagen en el formato que mas se acomode -->
+                        <source loading="lazy"  srcset="img/blog1.webp" type="image/webp">  
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">   <!-- lazy -->
                     </picture>
                 </div>
 

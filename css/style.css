@@ -237,7 +237,7 @@ img {
 
 .formulario {
     background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
+    margin: -5rem auto 0 auto;   /** -5rem es para encimar el formulario en la imagen **/
     width: 95%;
     padding: 5rem;
 }
