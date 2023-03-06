@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafé</title>
-    <meta name="description" content="Página web de blog de café">
+    <meta name="description" content="Página web de blog de café">  <!-- descripcion es una buena practica-->
 
     <!-- Prefetch: para cargar la siguiente pagina segun el usuario-->
     <link rel="prefetch" href="nosotros.html" as="document">
@@ -18,8 +18,6 @@
     
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preload" href="img/blog1.jpg" as="image">
 
 </head>
 <body>
@@ -53,7 +51,7 @@
             <article class="entrada">
                 <div class="entrada__imagen">
                     <picture>   <!-- soporta diferentes formatos y segun el navegador va a cargar la imagen en el formato que mas se acomode -->
-                        <source loading="lazy"  srcset="img/blog1.webp" type="image/webp">  
+                        <source loading="lazy"  srcset="img/blog1.webp" type="image/webp">   <!-- source complemento del picture -->
                         <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">   <!-- lazy -->
                     </picture>
                 </div>
